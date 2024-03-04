@@ -82,7 +82,6 @@ plugins=(
   ripgrep
   rust
   starship
-  sublime
   sudo
   tmux
   ubuntu
