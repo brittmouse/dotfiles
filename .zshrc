@@ -120,7 +120,7 @@ alias ls="ls -F --color=tty"
 alias kvim='NVIM_APPNAME="nvim-kickstart" nvim'
 alias lvim='NVIM_APPNAME="nvim-lazy" nvim'
 
-export PATH="$PATH:/usr/local/go/bin:$HOME/apache-maven-3.9.6/bin/:$HOME/nvim-linux64/bin/:$HOME/.config/emacs/bin:$HOME/.emacs.d/bin"
+export PATH="$PATH:/usr/local/go/bin:$HOME/apache-maven-3.9.6/bin/:$HOME/nvim-linux64/bin/:$HOME/.config/emacs/bin:$HOME/.emacs.d/bin:$HOME/hackerdirectory/scripts/sh/wicked-cool"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
