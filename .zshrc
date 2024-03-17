@@ -85,6 +85,7 @@ plugins=(
   sudo
   tmux
   ubuntu
+  vi-mode
   zoxide
 )
 
