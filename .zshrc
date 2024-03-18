@@ -118,8 +118,11 @@ alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias ll="ls -lF --color=tty"
 alias ls="ls -F --color=tty"
-alias kvim='NVIM_APPNAME="nvim-kickstart" nvim'
-alias lvim='NVIM_APPNAME="nvim-lazy" nvim'
+alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
+alias vl='NVIM_APPNAME="nvim-lazy" nvim'
+alias vs='NVIM_APPNAME="nvim-scratch" nvim'
+alias lazyconf='vl ~/.config/nvim-lazy'
+alias kickconf='vk ~/.config/nvim-kickstart'
 
 export PATH="$PATH:/usr/local/go/bin:$HOME/apache-maven-3.9.6/bin/:$HOME/nvim-linux64/bin/:$HOME/.config/emacs/bin:$HOME/.emacs.d/bin:$HOME/hackerdirectory/scripts/sh/wicked-cool"
 export NVM_DIR="$HOME/.nvm"
