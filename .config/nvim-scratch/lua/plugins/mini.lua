@@ -1,9 +1,7 @@
 return {
 	"echasnovski/mini.nvim",
 	version = false,
-	priority = 1000,
 	config = function()
-		vim.cmd([[colorscheme minicyan]])
 		require("mini.ai").setup({ n_lines = 500 })
 		require("mini.bracketed").setup()
 		require("mini.comment").setup()
@@ -12,10 +10,9 @@ return {
 		})
 		require("mini.hipatterns").setup({
 			highlighters = {
-				fixme = { pattern = "%f[%w]()FIXME()%f[%W]", group = "MiniHipatternsFixMe" },
-				hack = { pattern = "%f[%w]()HACK()%f[%W]", group = "MiniHipatternsHack" },
 				todo = { pattern = "%f[%w]()TODO()%f[%W]", group = "MiniHipatternsTodo" },
 				note = { pattern = "%f[%w]()NOTE()%f[%W]", group = "MiniHipatternsNote" },
+				done = { pattern = "%f[%w]()DONE()%f[%W]", group = "MiniHipatternsDone" },
 
 				hex_color = require("mini.hipatterns").gen_highlighter.hex_color(),
 			},

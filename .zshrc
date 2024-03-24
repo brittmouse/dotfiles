@@ -121,8 +121,9 @@ alias ls="ls -F --color=tty"
 alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
 alias vl='NVIM_APPNAME="nvim-lazy" nvim'
 alias vs='NVIM_APPNAME="nvim-scratch" nvim'
-alias lazyconf='vl ~/.config/nvim-lazy'
-alias kickconf='vk ~/.config/nvim-kickstart'
+alias lazyrc='vl ~/.config/nvim-lazy'
+alias kickrc='vk ~/.config/nvim-kickstart'
+alias scratchrc='vs ~/.config/nvim-scratch'
 
 export PATH="$PATH:/usr/local/go/bin:$HOME/apache-maven-3.9.6/bin/:$HOME/nvim-linux64/bin/:$HOME/.config/emacs/bin:$HOME/.emacs.d/bin:$HOME/hackerdirectory/scripts/sh/wicked-cool"
 export NVM_DIR="$HOME/.nvm"

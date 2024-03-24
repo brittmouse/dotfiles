@@ -65,6 +65,8 @@ set smartcase
 set showcmd
 set showmode
 set showmatch
+set number
+set relativenumber
 " }}}
 
 " Remaps --------------- {{{
