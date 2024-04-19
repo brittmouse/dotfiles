@@ -86,6 +86,7 @@ plugins=(
   tmux
   ubuntu
   vi-mode
+  zsh-syntax-highlighting
   zoxide
 )
 
@@ -113,11 +114,16 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias zshconfig="nvim ~/.zshrc"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
+# Aliases - OMZ
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+
+# Aliases - Terminal commands
 alias ll="ls -lF --color=tty"
 alias ls="ls -F --color=tty"
+alias zj="zellij"
+
+# Aliases - Neovim
 alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
 alias vl='NVIM_APPNAME="nvim-lazy" nvim'
 alias vs='NVIM_APPNAME="nvim-scratch" nvim'
@@ -125,7 +131,7 @@ alias lazyrc='vl ~/.config/nvim-lazy'
 alias kickrc='vk ~/.config/nvim-kickstart'
 alias scratchrc='vs ~/.config/nvim-scratch'
 
-export PATH="$PATH:/usr/local/go/bin:$HOME/apache-maven-3.9.6/bin/:$HOME/nvim-linux64/bin/:$HOME/.config/emacs/bin:$HOME/.emacs.d/bin:$HOME/hackerdirectory/scripts/sh/wicked-cool"
+export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/apache-maven-3.9.6/bin/:$HOME/.local/share/bob/nvim-bin:$HOME/.config/emacs/bin:$HOME/.emacs.d/bin:$HOME/hackerdirectory/scripts/sh/wicked-cool"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -133,9 +139,18 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(zoxide init zsh)"
 
+# Created by `pipx` on 2024-02-25 22:51:43
+export PATH="$PATH:/home/brittmouse/.local/bin"
+
+# FZF installation and configuration
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
+--color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
+--color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8797"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# Created by `pipx` on 2024-02-25 22:51:43
-export PATH="$PATH:/home/brittmouse/.local/bin"
+[[ -s "/home/brittmouse/.gvm/scripts/gvm" ]] && source "/home/brittmouse/.gvm/scripts/gvm"

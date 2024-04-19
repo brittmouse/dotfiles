@@ -1,4 +1,3 @@
-
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
@@ -55,6 +54,7 @@ endif
 " }}}
 
 " Sets ----------------- {{{
+set termguicolors
 set shiftwidth=4
 set tabstop=4
 set expandtab
@@ -74,6 +74,10 @@ let mapleader = " "
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
 nnoremap <leader>pv :Ex<CR>
+inoremap <esc> <esc><cmd>update<CR>
+nnoremap [b <cmd>bprevious<CR>
+nnoremap ]b <cmd>bnext<CR>
+nnoremap <M-z> vipzf<cmd>mkview<CR>
 " }}}
 
 " VIMSCRIPT ------------{{{
@@ -82,4 +86,30 @@ nnoremap <leader>pv :Ex<CR>
 augroup filetype_vim
     autocmd!
     autocmd FileType vim setlocal foldmethod=marker
-augroup END
+augroup END"}}}
+
+" VIM-PLUG ----{{{{
+" Bootstrapping vim-plug
+let data_dir = '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+    silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+" ---}}}}
+
+" PLUGINS ----{{{{
+call plug#begin()
+Plug '~/.fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-eunuch'
+Plug 'vimwiki/vimwiki'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+" }}}}

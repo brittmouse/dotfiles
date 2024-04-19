@@ -4,3 +4,4 @@
 
 -- Add path to top of the editor window
 vim.opt.winbar = "%=%m %f"
+vim.opt.swapfile = false
