@@ -74,9 +74,6 @@ plugins=(
   aliases
   emoji
   git
-  golang
-  npm
-  nvm
   ripgrep
   rust
   starship
