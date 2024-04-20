@@ -72,13 +72,11 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   aliases
-  docker
   emoji
   git
   golang
   npm
   nvm
-  podman
   ripgrep
   rust
   starship
@@ -86,6 +84,7 @@ plugins=(
   tmux
   ubuntu
   vi-mode
+  zsh-autosuggestions
   zsh-syntax-highlighting
   zoxide
 )
@@ -115,8 +114,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Aliases - OMZ
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+alias zshconfig="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 # Aliases - Terminal commands
 alias ll="ls -lF --color=tty"

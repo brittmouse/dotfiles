@@ -1,4 +1,6 @@
 return {
   'stevearc/oil.nvim',
-  opts = {},
+  config = function()
+    vim.keymap.set('n', '<leader>fe', '<cmd>Oil<CR>')
+  end,
 }
