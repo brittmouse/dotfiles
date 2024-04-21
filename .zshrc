@@ -136,6 +136,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(zoxide init zsh)"
 
+export RUSTC_WRAPPER="$HOME/.cargo/bin/"
+
 # Created by `pipx` on 2024-02-25 22:51:43
 export PATH="$PATH:/home/brittmouse/.local/bin"
 
