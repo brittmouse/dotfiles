@@ -115,8 +115,8 @@ alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 # Aliases - Terminal commands
-alias ll="ls -lF --color=tty"
-alias ls="ls -F --color=tty"
+alias ls="exa -F"
+alias ll="exa -lF"
 alias zj="zellij"
 
 # Aliases - Neovim
