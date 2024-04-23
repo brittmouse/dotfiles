@@ -44,6 +44,10 @@ return {
     end,
   },
   {
+    -- Vim Markdown
+    'preservim/vim-markdown',
+  },
+  {
     -- Glow
     'ellisonleao/glow.nvim',
     config = true,
