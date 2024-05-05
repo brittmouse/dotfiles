@@ -112,4 +112,5 @@ Plug 'vimwiki/vimwiki'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'christoomey/vim-tmux-navigator'
 " }}}}
