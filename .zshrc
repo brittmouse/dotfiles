@@ -137,6 +137,7 @@ eval "$(rbenv init -)"
 eval "$(zoxide init zsh)"
 
 export RUSTC_WRAPPER="$HOME/.cargo/bin/"
+export CARGO_TARGER_DIR="$HOME/.cargo/tmp/"
 
 # Created by `pipx` on 2024-02-25 22:51:43
 export PATH="$PATH:/home/brittmouse/.local/bin"
@@ -156,3 +157,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 [[ -s "/home/brittmouse/.gvm/scripts/gvm" ]] && source "/home/brittmouse/.gvm/scripts/gvm"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(thefuck --alias)"
