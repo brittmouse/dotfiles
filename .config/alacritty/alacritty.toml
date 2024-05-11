@@ -1,0 +1,14 @@
+import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+dimensions = { columns = 90, lines = 30 }
+decorations = "none"
+opacity = 0.9
+dynamic_title = false
+
+[font]
+normal.family = "MartianMono Nerd Font Mono"
+size = 14
