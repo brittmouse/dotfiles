@@ -10,5 +10,5 @@ opacity = 0.9
 dynamic_title = false
 
 [font]
-normal.family = "MartianMono Nerd Font Mono"
-size = 14
+normal.family = "IosevkaTerm NFM Medium"
+size = 12
