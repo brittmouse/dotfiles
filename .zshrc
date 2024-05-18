@@ -26,7 +26,6 @@ zinit light Aloxaf/fzf-tab
 
 # Include snippets
 zinit snippet OMZP::archlinux
-zinit snippet OMZP::emacs
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 
