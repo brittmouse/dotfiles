@@ -25,9 +25,10 @@ zinit light zsh-users/zsh-autosuggestions && bindkey '^ ' autosuggest-accept
 zinit light Aloxaf/fzf-tab
 
 # Include snippets
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::emacs
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::ubuntu
 
 zinit cdreplay -q
 
@@ -38,12 +39,12 @@ alias zj="zellij"
 alias c="clear"
 
 # Aliases - Neovim
-alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
-alias vl='NVIM_APPNAME="nvim-lazy" nvim'
-alias vs='NVIM_APPNAME="nvim-scratch" nvim'
-alias lazyrc='vl ~/.config/nvim-lazy'
-alias kickrc='vk ~/.config/nvim-kickstart'
-alias scratchrc='vs ~/.config/nvim-scratch'
+# alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
+# alias vl='NVIM_APPNAME="nvim-lazy" nvim'
+# alias vs='NVIM_APPNAME="nvim-scratch" nvim'
+# alias lazyrc='vl ~/.config/nvim-lazy'
+# alias kickrc='vk ~/.config/nvim-kickstart'
+# alias scratchrc='vs ~/.config/nvim-scratch'
 
 # Bindkey
 bindkey -e

@@ -10,5 +10,5 @@ opacity = 0.9
 dynamic_title = false
 
 [font]
-normal.family = "IosevkaTerm NFM Medium"
+normal.family = "GeistMono NFM"
 size = 14
