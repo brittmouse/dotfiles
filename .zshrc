@@ -45,6 +45,15 @@ alias c="clear"
 # alias kickrc='vk ~/.config/nvim-kickstart'
 # alias scratchrc='vs ~/.config/nvim-scratch'
 
+# Aliases - Tmux (stolen from OMZP)
+alias ta='tmux attach -t'
+alias tad='tmux attach -d -t'
+alias tkss='tmux kill-session -t'
+alias tksv='tmux kill-server'
+alias tl='tmux list-sessions'
+alias tmuxconf='$EDITOR $HOME/.tmux.conf'
+alias ts='tmux new-session -s'
+
 # Bindkey
 bindkey -e
 bindkey '^p' history-search-backward
@@ -57,7 +66,7 @@ zstyle ":completion:*" menu no
 zstyle ":fzf-tab:complete:cd:*" fzf-preview "ls -F --color $realpath"
 
 # Evals
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(thefuck --alias)"
 eval "$(zoxide init zsh)"
 

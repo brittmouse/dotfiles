@@ -73,7 +73,7 @@ set relativenumber
 let mapleader = " "
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
-nnoremap <leader>pv :Ex<CR>
+nnoremap <leader>fe :Ex<CR>
 inoremap <esc> <esc><cmd>update<CR>
 nnoremap [b <cmd>bprevious<CR>
 nnoremap ]b <cmd>bnext<CR>
