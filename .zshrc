@@ -38,12 +38,21 @@ alias zj="zellij"
 alias c="clear"
 
 # Aliases - Neovim
-alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
-alias vl='NVIM_APPNAME="nvim-lazy" nvim'
-alias vs='NVIM_APPNAME="nvim-scratch" nvim'
-alias lazyrc='vl ~/.config/nvim-lazy'
-alias kickrc='vk ~/.config/nvim-kickstart'
-alias scratchrc='vs ~/.config/nvim-scratch'
+# alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
+# alias vl='NVIM_APPNAME="nvim-lazy" nvim'
+# alias vs='NVIM_APPNAME="nvim-scratch" nvim'
+# alias lazyrc='vl ~/.config/nvim-lazy'
+# alias kickrc='vk ~/.config/nvim-kickstart'
+# alias scratchrc='vs ~/.config/nvim-scratch'
+
+# Aliases - Tmux (stolen from OMZP)
+alias ta='tmux attach -t'
+alias tad='tmux attach -d -t'
+alias tkss='tmux kill-session -t'
+alias tksv='tmux kill-server'
+alias tl='tmux list-sessions'
+alias tmuxconf='$EDITOR $HOME/.tmux.conf'
+alias ts='tmux new-session -s'
 
 # Bindkey
 bindkey -e
