@@ -32,8 +32,8 @@ zinit snippet OMZP::ubuntu
 zinit cdreplay -q
 
 # Aliases - Terminal commands
-alias ls="exa -F"
-alias ll="exa -lF"
+alias ls="eza -F"
+alias ll="eza -lF"
 alias zj="zellij"
 alias c="clear"
 
