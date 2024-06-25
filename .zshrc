@@ -59,6 +59,7 @@ zstyle ":fzf-tab:complete:cd:*" fzf-preview "ls -F --color $realpath"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(thefuck --alias)"
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
 
 # Exports
 export WINE="$(which wine)"
@@ -76,14 +77,13 @@ setopt hist_ignore_dups
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_find_no_dups
+setopt nullglob
 
 # Paths
 export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/apache-maven-3.9.6/bin/:$HOME/.local/share/bob/nvim-bin:$HOME/.config/emacs/bin:$HOME/.emacs.d/bin:$HOME/hackerdirectory/scripts/sh/wicked-cool"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-eval "$(zoxide init zsh)"
-eval "$(starship init zsh)"
 
 # Created by `pipx` on 2024-02-25 22:51:43
 export PATH="$PATH:/home/brittmouse/.local/bin"
@@ -100,3 +100,8 @@ export FZF_DEFAULT_OPTS=" \
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+nerdfetch
