@@ -12,3 +12,7 @@ dynamic_title = false
 [font]
 normal.family = "VictorMono NFM"
 size = 14
+
+[shell]
+program = "/usr/bin/zsh"
+args = ["--login"]
