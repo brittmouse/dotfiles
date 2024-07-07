@@ -24,7 +24,9 @@ zinit cdreplay -q
 
 # Aliases - Terminal commands
 alias ls="eza -F"
-alias ll="eza -lF"
+alias ll="eza -lF --icons"
+alias la="eza -aF"
+alias lla="eza -alF --icons"
 alias zj="zellij"
 alias c="clear"
 
