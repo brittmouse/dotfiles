@@ -3,3 +3,4 @@
 
 Ignore any lazy-lock.json so you don't have to commit package updates
 */lazy-lock.json
+.config/nvim/lazy-lock.json
