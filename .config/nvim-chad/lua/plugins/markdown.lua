@@ -51,6 +51,11 @@ return {
     lazy = true,
   },
   {
+    -- Vim Pencil
+    'preservim/vim-pencil',
+    lazy = true,
+  },
+  {
     -- Glow
     'ellisonleao/glow.nvim',
     lazy = true,
