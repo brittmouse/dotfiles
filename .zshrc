@@ -28,7 +28,9 @@ alias ll="eza -lF --icons"
 alias la="eza -aF"
 alias lla="eza -alF --icons"
 alias zj="zellij"
+alias lg="lazygit"
 alias c="clear"
+alias q="exit"
 
 # Aliases - Neovim
 # alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
@@ -67,6 +69,7 @@ eval "$(starship init zsh)"
 # Exports
 export WINE="$(which wine)"
 export WINETRICKS="$(which winetricks)"
+export EDITOR="$(which nvim)"
 
 # History
 HISTSIZE=5000
