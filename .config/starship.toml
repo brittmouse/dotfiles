@@ -5,9 +5,9 @@
 add_newline = false
 palette = "catppuccin_macchiato"
 
-# Replace the '❯' symbol in the prompt with '➜'
+# Replace the '❯' symbol in the prompt with 'λ'
 [character] # The name of the module we are configuring is 'character'
-success_symbol = '[λ](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+success_symbol = '[λ](bold pink)' # The 'success_symbol' segment is being set to '➜' with the color 'bold pink'
 error_symbol = '[λ](bold red)'
 
 # Disable the package module, hiding it from the prompt completely
