@@ -23,9 +23,14 @@ zinit cdreplay -q
 
 # Aliases - Terminal commands
 alias ls="eza -F=always"
-alias ll="eza -lF=always --icons=always"
+alias ll="ls -l --icons=always"
+alias la="ls -a"
+alias lla="ll -a"
+alias lt="ls -T"
+alias lta="lt -a"
 alias zj="zellij"
 alias c="clear"
+alias q="exit"
 
 # Aliases - Neovim
 # alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
@@ -79,7 +84,6 @@ export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/apache-maven-3.9.6/bin/:
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-eval "$(zoxide init zsh)"
 
 # Created by `pipx` on 2024-02-25 22:51:43
 export PATH="$PATH:/home/brittmouse/.local/bin"
