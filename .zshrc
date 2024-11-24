@@ -67,6 +67,10 @@ eval "$(thefuck --alias)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
+# Exports
+export WINE="$(which wine)"
+export WINETRICKS="$(which winetricks)"
+
 # History
 HISTSIZE=5000
 HISTFILE="$HOME/.zsh_history"
