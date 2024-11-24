@@ -25,7 +25,14 @@ symbol = " "
 [time]
 disabled = false
 format = '[$time]($style)'
-style = 'dimmed red'
+style = 'dimmed yellow'
+
+[directory.substitutions]
+"~" = " "
+"Documents" = "󰷈 "
+"Downloads" = "󰉍 "
+"Music" = " "
+"Pictures" = " "
 
 [character]
 # Lambda: 󰘧
