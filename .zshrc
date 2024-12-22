@@ -16,30 +16,19 @@ zinit light Aloxaf/fzf-tab
 
 # Include snippets
 zinit snippet OMZP::archlinux
+zinit snippet OMZP::eza
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 
 zinit cdreplay -q
 
 # Aliases - Terminal commands
-alias ls="eza -F=always"
-alias ll="ls -l --icons=always"
-alias la="ls -a"
-alias lla="ll -a"
-alias lt="ls -T"
-alias lta="lt -a"
 alias lg="lazygit"
 alias zj="zellij"
 alias c="clear"
 alias q="exit"
-
-# Aliases - Neovim
-# alias vk='NVIM_APPNAME="nvim-kickstart" nvim'
-# alias vl='NVIM_APPNAME="nvim-lazy" nvim'
-# alias vs='NVIM_APPNAME="nvim-scratch" nvim'
-# alias lazyrc='vl ~/.config/nvim-lazy'
-# alias kickrc='vk ~/.config/nvim-kickstart'
-# alias scratchrc='vs ~/.config/nvim-scratch'
+alias v="vim"
+alias nv="nvim"
 
 # Aliases - Tmux (stolen from OMZP)
 alias ta='tmux attach -t'
