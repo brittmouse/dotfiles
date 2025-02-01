@@ -277,16 +277,12 @@ require('lazy').setup {
 
       -- Document existing key chains
       require('which-key').register {
-        { '<leader>c', group = '[C]ode' },
-        { '<leader>c_', hidden = true },
-        { '<leader>d', group = '[D]ocument' },
-        { '<leader>d_', hidden = true },
-        { '<leader>r', group = '[R]ename' },
-        { '<leader>r_', hidden = true },
-        { '<leader>s', group = '[S]earch' },
-        { '<leader>s_', hidden = true },
-        { '<leader>w', group = '[W]orkspace' },
-        { '<leader>w_', hidden = true },
+        { '', group = '[C]ode' },
+        { '', group = '[D]ocument' },
+        { '', group = '[R]ename' },
+        { '', group = '[S]earch' },
+        { '', group = '[W]orkspace' },
+        { '', desc = '', hidden = true, mode = { 'n', 'n', 'n', 'n', 'n' } },
       }
     end,
   },

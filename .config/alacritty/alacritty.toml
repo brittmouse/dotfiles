@@ -1,4 +1,3 @@
-import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -10,5 +9,8 @@ opacity = 0.9
 dynamic_title = false
 
 [font]
-normal.family = "GeistMono NFM"
-size = 14
+normal.family = "JetBrainsMono Nerd Font"
+size = 12
+
+[general]
+import = ["~/.config/alacritty/catppuccin-macchiato.toml"]

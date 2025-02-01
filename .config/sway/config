@@ -16,9 +16,10 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term kitty
+set $term alacritty
 # Your preferred application launcher
 set $menu rofi -show drun,run,window
+set $emoji_menu rofi -modi emoji -show emoji
 
 ### Output configuration
 #
@@ -70,6 +71,7 @@ exec swayidle -w \
 
     # Start your launcher
     bindsym $mod+d exec $menu
+    bindsym $mod+Shift+D exec $emoji_menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -213,22 +215,22 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id autotiling --workspaces 1 --limit 2
 
 # Borders
-font pango:Comfortaa Regular 11
+font pango:Comfortaa Bold 11
 title_align center
 gaps outer 4
 gaps inner 4
 default_border normal 0
-default_floating_border normal 2
+default_floating_border normal 4
 bindsym $mod+t border normal 0
-bindsym $mod+y border normal 2
+bindsym $mod+y border pixel 4
 bindsym $mod+u border none
 
-# target                 title     bg    text   indicator  border
-client.focused           $green $green $crust  $rosewater $green
-client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
-client.unfocused         $overlay0 $base $text  $rosewater $overlay0
-client.urgent            $peach    $base $peach $overlay0  $peach
-client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+# target                 title     bg     text   indicator  border
+client.focused           $blue    $blue $crust $blue     $blue
+client.focused_inactive  $overlay0 $base  $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base  $text  $rosewater $overlay0
+client.urgent            $peach    $base  $peach $overlay0  $peach
+client.placeholder       $overlay0 $base  $text  $overlay0  $overlay0
 client.background        $base
 
 #
@@ -237,7 +239,8 @@ client.background        $base
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-    font pango:FiraCode Nerd Font 11
+    # swaybar_command /usr/bin/waybar
+    font pango:Lilex Nerd Font 10
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
@@ -250,7 +253,7 @@ bar {
         focused_separator  $base
 
         # target           border bg        text
-        focused_workspace  $base  $green    $crust
+        focused_workspace  $base  $blue    $crust
         active_workspace   $base  $surface2 $text
         inactive_workspace $base  $surface2 $text
         urgent_workspace   $base  $red      $crust
