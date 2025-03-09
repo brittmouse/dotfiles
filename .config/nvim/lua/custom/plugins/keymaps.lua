@@ -5,4 +5,5 @@ return {
   vim.keymap.set({ 'n', 'i' }, '<C-s>', '<esc><cmd>update<cr>'),
   -- vim.keymap.set('i', '<esc>', '<esc><cmd>update<CR>'),
   -- vim.keymap.set('i', '<C-c>', '<C-c><cmd>update<CR>'),
+  vim.keymap.set('n', '<leader>l', '<cmd>Lazy<CR>', { desc = '[L]azy' }),
 }
